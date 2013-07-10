@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Timothy Payton. All rights reserved.
 //
 
-#import "TPAppDelegate.h"
+#import "MatchiAppDelegate.h"
 
-@implementation TPAppDelegate
+@implementation MatchiAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

@@ -7,20 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F849B9FE178D553B00CE75C9 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = F849B9FD178D553B00CE75C9 /* Deck.m */; };
+		F849BA01178D556100CE75C9 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F849BA00178D556100CE75C9 /* Card.m */; };
+		F849BA05178D583600CE75C9 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F849BA04178D583600CE75C9 /* PlayingCard.m */; };
+		F849BA08178D5C0300CE75C9 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = F849BA07178D5C0300CE75C9 /* PlayingCardDeck.m */; };
 		F88D824F178C68AF00A6D093 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88D824E178C68AF00A6D093 /* UIKit.framework */; };
 		F88D8251178C68AF00A6D093 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88D8250178C68AF00A6D093 /* Foundation.framework */; };
 		F88D8253178C68AF00A6D093 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88D8252178C68AF00A6D093 /* CoreGraphics.framework */; };
 		F88D8259178C68AF00A6D093 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F88D8257178C68AF00A6D093 /* InfoPlist.strings */; };
 		F88D825B178C68AF00A6D093 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F88D825A178C68AF00A6D093 /* main.m */; };
-		F88D825F178C68AF00A6D093 /* TPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F88D825E178C68AF00A6D093 /* TPAppDelegate.m */; };
+		F88D825F178C68AF00A6D093 /* MatchiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F88D825E178C68AF00A6D093 /* MatchiAppDelegate.m */; };
 		F88D8261178C68AF00A6D093 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F88D8260178C68AF00A6D093 /* Default.png */; };
 		F88D8263178C68AF00A6D093 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F88D8262178C68AF00A6D093 /* Default@2x.png */; };
 		F88D8265178C68AF00A6D093 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F88D8264178C68AF00A6D093 /* Default-568h@2x.png */; };
 		F88D8268178C68AF00A6D093 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88D8266178C68AF00A6D093 /* MainStoryboard.storyboard */; };
-		F88D826B178C68AF00A6D093 /* TPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88D826A178C68AF00A6D093 /* TPViewController.m */; };
+		F88D826B178C68AF00A6D093 /* MatchiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88D826A178C68AF00A6D093 /* MatchiViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F849B9FC178D553B00CE75C9 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Models/Deck.h; sourceTree = "<group>"; };
+		F849B9FD178D553B00CE75C9 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Models/Deck.m; sourceTree = "<group>"; };
+		F849B9FF178D556100CE75C9 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Models/Card.h; sourceTree = "<group>"; };
+		F849BA00178D556100CE75C9 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Models/Card.m; sourceTree = "<group>"; };
+		F849BA03178D583600CE75C9 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Models/PlayingCard.h; sourceTree = "<group>"; };
+		F849BA04178D583600CE75C9 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Models/PlayingCard.m; sourceTree = "<group>"; };
+		F849BA06178D5C0300CE75C9 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Models/PlayingCardDeck.h; sourceTree = "<group>"; };
+		F849BA07178D5C0300CE75C9 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Models/PlayingCardDeck.m; sourceTree = "<group>"; };
 		F88D824B178C68AF00A6D093 /* Matchisimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchisimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88D824E178C68AF00A6D093 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F88D8250178C68AF00A6D093 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -29,14 +41,14 @@
 		F88D8258178C68AF00A6D093 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F88D825A178C68AF00A6D093 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F88D825C178C68AF00A6D093 /* Matchisimo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Matchisimo-Prefix.pch"; sourceTree = "<group>"; };
-		F88D825D178C68AF00A6D093 /* TPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPAppDelegate.h; sourceTree = "<group>"; };
-		F88D825E178C68AF00A6D093 /* TPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPAppDelegate.m; sourceTree = "<group>"; };
+		F88D825D178C68AF00A6D093 /* MatchiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchiAppDelegate.h; sourceTree = "<group>"; };
+		F88D825E178C68AF00A6D093 /* MatchiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchiAppDelegate.m; sourceTree = "<group>"; };
 		F88D8260178C68AF00A6D093 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F88D8262178C68AF00A6D093 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F88D8264178C68AF00A6D093 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F88D8267178C68AF00A6D093 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		F88D8269178C68AF00A6D093 /* TPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPViewController.h; sourceTree = "<group>"; };
-		F88D826A178C68AF00A6D093 /* TPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPViewController.m; sourceTree = "<group>"; };
+		F88D8269178C68AF00A6D093 /* MatchiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchiViewController.h; sourceTree = "<group>"; };
+		F88D826A178C68AF00A6D093 /* MatchiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchiViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +65,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F849BA02178D55BF00CE75C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F849B9FC178D553B00CE75C9 /* Deck.h */,
+				F849B9FD178D553B00CE75C9 /* Deck.m */,
+				F849B9FF178D556100CE75C9 /* Card.h */,
+				F849BA00178D556100CE75C9 /* Card.m */,
+				F849BA03178D583600CE75C9 /* PlayingCard.h */,
+				F849BA04178D583600CE75C9 /* PlayingCard.m */,
+				F849BA06178D5C0300CE75C9 /* PlayingCardDeck.h */,
+				F849BA07178D5C0300CE75C9 /* PlayingCardDeck.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		F88D8242178C68AF00A6D093 = {
 			isa = PBXGroup;
 			children = (
+				F849BA02178D55BF00CE75C9 /* Models */,
 				F88D8254178C68AF00A6D093 /* Matchisimo */,
 				F88D824D178C68AF00A6D093 /* Frameworks */,
 				F88D824C178C68AF00A6D093 /* Products */,
@@ -83,11 +111,11 @@
 		F88D8254178C68AF00A6D093 /* Matchisimo */ = {
 			isa = PBXGroup;
 			children = (
-				F88D825D178C68AF00A6D093 /* TPAppDelegate.h */,
-				F88D825E178C68AF00A6D093 /* TPAppDelegate.m */,
+				F88D825D178C68AF00A6D093 /* MatchiAppDelegate.h */,
+				F88D825E178C68AF00A6D093 /* MatchiAppDelegate.m */,
 				F88D8266178C68AF00A6D093 /* MainStoryboard.storyboard */,
-				F88D8269178C68AF00A6D093 /* TPViewController.h */,
-				F88D826A178C68AF00A6D093 /* TPViewController.m */,
+				F88D8269178C68AF00A6D093 /* MatchiViewController.h */,
+				F88D826A178C68AF00A6D093 /* MatchiViewController.m */,
 				F88D8255178C68AF00A6D093 /* Supporting Files */,
 			);
 			path = Matchisimo;
@@ -133,7 +161,7 @@
 		F88D8243178C68AF00A6D093 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = TP;
+				CLASSPREFIX = Matchi;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Timothy Payton";
 			};
@@ -175,8 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F88D825B178C68AF00A6D093 /* main.m in Sources */,
-				F88D825F178C68AF00A6D093 /* TPAppDelegate.m in Sources */,
-				F88D826B178C68AF00A6D093 /* TPViewController.m in Sources */,
+				F88D825F178C68AF00A6D093 /* MatchiAppDelegate.m in Sources */,
+				F88D826B178C68AF00A6D093 /* MatchiViewController.m in Sources */,
+				F849B9FE178D553B00CE75C9 /* Deck.m in Sources */,
+				F849BA01178D556100CE75C9 /* Card.m in Sources */,
+				F849BA05178D583600CE75C9 /* PlayingCard.m in Sources */,
+				F849BA08178D5C0300CE75C9 /* PlayingCardDeck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +331,7 @@
 				F88D8270178C68AF00A6D093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

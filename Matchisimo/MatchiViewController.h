@@ -1,5 +1,5 @@
 //
-//  TPAppDelegate.h
+//  TPViewController.h
 //  Matchisimo
 //
 //  Created by Timothy Payton on 7/9/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TPAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface MatchiViewController : UIViewController
 
 @end
