@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UIButton *resetButton;
 
 @end
 
@@ -32,6 +33,12 @@
 {
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
     self.flipCount++;
+    [self updateUI];
+}
+
+- (IBAction)resetGame:(UIButton *)sender {
+    self.game = nil;
+    self.flipCount = 0;
     [self updateUI];
 }
 
