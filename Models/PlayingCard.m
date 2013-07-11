@@ -45,13 +45,31 @@
     
     if (otherCards.count == 1) {
         PlayingCard *otherCard = [otherCards lastObject];
-        if ([otherCard.suit isEqualToString:self.suit]) {
-            score = 1;
-        } else if (otherCard.rank == self.rank) {
-            score = 4;
+        [self singleCardMatch:otherCard];
+    } else if (otherCards.count == 2) {
+        for (PlayingCard *card in otherCards) {
+            int matchScore = [self singleCardMatch:card];
+            if (!matchScore) {
+                score = 0;
+                break;
+            } else {
+                score += matchScore;
+            }
         }
     }
     
+    return score;
+}
+
+- (int)singleCardMatch:(PlayingCard *)otherCard
+{
+    int score = 0;
+    
+    if ([otherCard.suit isEqualToString:self.suit]) {
+        score = 1;
+    } else if (otherCard.rank == self.rank) {
+        score = 4;
+    }
     return score;
 }
 

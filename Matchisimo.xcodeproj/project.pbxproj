@@ -12,6 +12,7 @@
 		F849BA01178D556100CE75C9 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F849BA00178D556100CE75C9 /* Card.m */; };
 		F849BA05178D583600CE75C9 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F849BA04178D583600CE75C9 /* PlayingCard.m */; };
 		F849BA08178D5C0300CE75C9 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = F849BA07178D5C0300CE75C9 /* PlayingCardDeck.m */; };
+		F849BA0B178EDAA800CE75C9 /* ThreeCardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F849BA0A178EDAA800CE75C9 /* ThreeCardMatchingGame.m */; };
 		F88D824F178C68AF00A6D093 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88D824E178C68AF00A6D093 /* UIKit.framework */; };
 		F88D8251178C68AF00A6D093 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88D8250178C68AF00A6D093 /* Foundation.framework */; };
 		F88D8253178C68AF00A6D093 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88D8252178C68AF00A6D093 /* CoreGraphics.framework */; };
@@ -36,6 +37,9 @@
 		F849BA04178D583600CE75C9 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Models/PlayingCard.m; sourceTree = "<group>"; };
 		F849BA06178D5C0300CE75C9 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Models/PlayingCardDeck.h; sourceTree = "<group>"; };
 		F849BA07178D5C0300CE75C9 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Models/PlayingCardDeck.m; sourceTree = "<group>"; };
+		F849BA09178EDAA800CE75C9 /* ThreeCardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreeCardMatchingGame.h; path = Models/ThreeCardMatchingGame.h; sourceTree = SOURCE_ROOT; };
+		F849BA0A178EDAA800CE75C9 /* ThreeCardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreeCardMatchingGame.m; path = Models/ThreeCardMatchingGame.m; sourceTree = SOURCE_ROOT; };
+		F849BA0C178EDE1500CE75C9 /* _CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _CardMatchingGame.h; path = Models/_CardMatchingGame.h; sourceTree = "<group>"; };
 		F88D824B178C68AF00A6D093 /* Matchisimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchisimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88D824E178C68AF00A6D093 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F88D8250178C68AF00A6D093 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +75,8 @@
 		F849BA02178D55BF00CE75C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F849BA09178EDAA800CE75C9 /* ThreeCardMatchingGame.h */,
+				F849BA0A178EDAA800CE75C9 /* ThreeCardMatchingGame.m */,
 				F849B9FC178D553B00CE75C9 /* Deck.h */,
 				F849B9FD178D553B00CE75C9 /* Deck.m */,
 				F849B9FF178D556100CE75C9 /* Card.h */,
@@ -80,6 +86,7 @@
 				F849BA06178D5C0300CE75C9 /* PlayingCardDeck.h */,
 				F849BA07178D5C0300CE75C9 /* PlayingCardDeck.m */,
 				22D21CB1178E8B580028BDFB /* CardMatchingGame.h */,
+				F849BA0C178EDE1500CE75C9 /* _CardMatchingGame.h */,
 				22D21CB2178E8B580028BDFB /* CardMatchingGame.m */,
 			);
 			name = Models;
@@ -215,6 +222,7 @@
 				F849BA05178D583600CE75C9 /* PlayingCard.m in Sources */,
 				F849BA08178D5C0300CE75C9 /* PlayingCardDeck.m in Sources */,
 				22D21CB3178E8B580028BDFB /* CardMatchingGame.m in Sources */,
+				F849BA0B178EDAA800CE75C9 /* ThreeCardMatchingGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

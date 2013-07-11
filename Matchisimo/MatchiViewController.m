@@ -9,6 +9,7 @@
 #import "MatchiViewController.h"
 #import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
+#import "ThreeCardMatchingGame.h"
 
 @interface MatchiViewController ()
 
@@ -18,6 +19,7 @@
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UIButton *resetButton;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *gameTypeSwitchButton;
 
 @end
 
@@ -42,10 +44,26 @@
     [self updateUI];
 }
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self.gameTypeSwitchButton addTarget:self
+                                  action:@selector(resetGame:)
+                        forControlEvents:UIControlEventValueChanged];
+}
+
 - (CardMatchingGame *)game
 {
-    if (!_game) _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count
-                                                          usingDeck:[[PlayingCardDeck alloc] init]];
+    if (!_game) {
+        if ([self.gameTypeSwitchButton selectedSegmentIndex] == 0) {
+            _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count
+                                                      usingDeck:[[PlayingCardDeck alloc] init]];
+        } else {
+            NSLog(@"3 card game");
+            _game = [[ThreeCardMatchingGame alloc] initWithCardCount:self.cardButtons.count
+                                                      usingDeck:[[PlayingCardDeck alloc] init]];            
+        }
+    }
     return _game;
 }
 
