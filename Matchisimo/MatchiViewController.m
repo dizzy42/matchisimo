@@ -34,12 +34,14 @@
 - (IBAction)flipCard:(UIButton *)sender
 {
     [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
+    self.gameTypeSwitchButton.enabled = NO;
     self.flipCount++;
     [self updateUI];
 }
 
 - (IBAction)resetGame:(UIButton *)sender {
     self.game = nil;
+    self.gameTypeSwitchButton.enabled = YES;
     self.flipCount = 0;
     [self updateUI];
 }
