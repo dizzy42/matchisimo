@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D21CB3178E8B580028BDFB /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D21CB2178E8B580028BDFB /* CardMatchingGame.m */; };
 		F849B9FE178D553B00CE75C9 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = F849B9FD178D553B00CE75C9 /* Deck.m */; };
 		F849BA01178D556100CE75C9 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F849BA00178D556100CE75C9 /* Card.m */; };
 		F849BA05178D583600CE75C9 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = F849BA04178D583600CE75C9 /* PlayingCard.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22D21CB1178E8B580028BDFB /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Models/CardMatchingGame.h; sourceTree = "<group>"; };
+		22D21CB2178E8B580028BDFB /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Models/CardMatchingGame.m; sourceTree = "<group>"; };
 		F849B9FC178D553B00CE75C9 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Models/Deck.h; sourceTree = "<group>"; };
 		F849B9FD178D553B00CE75C9 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Models/Deck.m; sourceTree = "<group>"; };
 		F849B9FF178D556100CE75C9 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Models/Card.h; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				F849BA04178D583600CE75C9 /* PlayingCard.m */,
 				F849BA06178D5C0300CE75C9 /* PlayingCardDeck.h */,
 				F849BA07178D5C0300CE75C9 /* PlayingCardDeck.m */,
+				22D21CB1178E8B580028BDFB /* CardMatchingGame.h */,
+				22D21CB2178E8B580028BDFB /* CardMatchingGame.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 				F849BA01178D556100CE75C9 /* Card.m in Sources */,
 				F849BA05178D583600CE75C9 /* PlayingCard.m in Sources */,
 				F849BA08178D5C0300CE75C9 /* PlayingCardDeck.m in Sources */,
+				22D21CB3178E8B580028BDFB /* CardMatchingGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
