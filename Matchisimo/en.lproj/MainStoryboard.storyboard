@@ -305,12 +305,20 @@
                                     <segment title="3-card"/>
                                 </segments>
                             </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="arL-yj-ZBQ">
+                                <rect key="frame" x="22" y="205" width="279" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="flipsLabel" destination="KVK-zv-odg" id="baN-GK-H2Y"/>
                         <outlet property="gameTypeSwitchButton" destination="s8O-WQ-OFR" id="Lfj-kO-tnt"/>
+                        <outlet property="lastFlipDescriptionLabel" destination="arL-yj-ZBQ" id="1kv-1q-Hey"/>
                         <outlet property="resetButton" destination="992-rX-Tft" id="LAF-Vr-DHf"/>
                         <outlet property="scoreLabel" destination="Rga-oR-YJ4" id="J9N-ad-2fo"/>
                         <outletCollection property="cardButtons" destination="fFs-cL-WbL" id="kYu-Id-EZL"/>
@@ -343,6 +351,7 @@
                 <relationship kind="action" name="resetGame:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="flipsLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="gameTypeSwitchButton" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="lastFlipDescriptionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="resetButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outletCollection" name="cardButtons" candidateClass="UIButton"/>

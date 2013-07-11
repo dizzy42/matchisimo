@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UIButton *resetButton;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *gameTypeSwitchButton;
+@property (weak, nonatomic) IBOutlet UILabel *lastFlipDescriptionLabel;
 
 @end
 
@@ -61,7 +62,6 @@
             _game = [[CardMatchingGame alloc] initWithCardCount:self.cardButtons.count
                                                       usingDeck:[[PlayingCardDeck alloc] init]];
         } else {
-            NSLog(@"3 card game");
             _game = [[ThreeCardMatchingGame alloc] initWithCardCount:self.cardButtons.count
                                                       usingDeck:[[PlayingCardDeck alloc] init]];            
         }
@@ -86,6 +86,24 @@
         cardButton.alpha = card.isUnplayable ? 0.7 : 1.0;
     }
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
+    self.lastFlipDescriptionLabel.hidden = NO;
+    self.lastFlipDescriptionLabel.text = self.game.lastFlipDescription;
+    [self startTimerToHideLastFlipDescriptionLabel];
+}
+
+- (IBAction)startTimerToHideLastFlipDescriptionLabel
+{
+    
+    [NSTimer scheduledTimerWithTimeInterval:3.0
+                                     target:self
+                                   selector:@selector(hideLastFlipDescriptionLabel:)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
+- (void)hideLastFlipDescriptionLabel:(id)sender
+{
+    self.lastFlipDescriptionLabel.hidden = YES;
 }
 
 @end
